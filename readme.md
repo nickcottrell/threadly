@@ -15,9 +15,3 @@ http://istitch.net/threadly/demo.html?needle=nope
 
 This one will return an unsuccessful keyword match
 http://istitch.net/threadly/demo.html?nope=threaded
-
-This one will return a bunch of alerts wrapped in a debug conditional
-http://istitch.net/threadly/demo.html?needle=threaded&debug
-
-Same thing, but without a correct match
-http://istitch.net/threadly/demo.html?needle=nope&debug
