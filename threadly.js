@@ -19,8 +19,8 @@
 $(document).ready(function() {
 	
 	//list the valid values
-	var VALUES = ['bonesbrigade', 'djshadow', 'chesterfrench', 'yes', 'shit'];
-	var KEYWORD = 'offer';
+	var VALUES = ['threaded', 'pointy', 'inahaystack'];
+	var KEYWORD = 'needle';
 
 	//optional debug value
 	var DEBUG = 'debug';
@@ -48,6 +48,23 @@ $(document).ready(function() {
 	
 	var compare_value = amp_values[0];
 	var amp_value = amp_values[1];
+
+
+
+	//DEBUG VALUES
+	var debug_value = debuggolicious(amp_value, DEBUG);
+
+	function debuggolicious(amp_value_b, DEBUG_b) {
+		if (amp_value_b == DEBUG_b ) {
+			var debug_value_b = true;
+		}
+		else {
+			var debug_value_b = false;
+		}
+		return debug_value_b;
+	}
+
+
 	
 	/*SEE DEBUG*/if (debug_value) {alert(amp_value);}
 
@@ -135,18 +152,7 @@ $(document).ready(function() {
 
 
 
-	//DEBUG VALUES
-	var debug_value = debuggolicious(amp_value, DEBUG);
 
-	function debuggolicious(amp_value_b, DEBUG_b) {
-		if (amp_value_b == DEBUG_b ) {
-			var debug_value_b = true;
-		}
-		else {
-			var debug_value_b = false;
-		}
-		return debug_value_b;
-	}
 
 
 
